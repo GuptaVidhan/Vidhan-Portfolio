@@ -35,3 +35,22 @@ body {
     transform: translateY(0);
   }
 }
+/* About card neon border glow */
+@keyframes aboutGlow {
+  0%,
+  100% {
+    box-shadow:
+      0 0 12px rgba(59, 130, 246, 0.25),
+      0 0 30px rgba(59, 130, 246, 0.12);
+  }
+
+  50% {
+    box-shadow:
+      0 0 22px rgba(59, 130, 246, 0.45),
+      0 0 55px rgba(59, 130, 246, 0.2);
+  }
+}
+
+.about-card {
+  animation: aboutGlow 4s ease-in-out infinite;
+}
